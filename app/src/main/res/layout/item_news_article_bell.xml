@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="21dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/bgr_radius_10"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img_item_new_article_hot"
+            android:layout_width="102dp"
+            android:layout_height="104dp"
+            android:src="@drawable/item_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_sale_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/raleway_regular"
+            android:text="ALT -3,87%"
+            android:textColor="#f00909"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toRightOf="@id/img_item_new_article_hot"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_date_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/lato_light"
+            android:text="3 Sept 2020"
+            android:textColor="#080808"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toRightOf="@id/tv_sale_hot"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/raleway_black"
+            android:text="ATLANTIA"
+            android:textColor="#2e2e2e"
+            app:layout_constraintLeft_toRightOf="@id/img_item_new_article_hot"
+            app:layout_constraintTop_toBottomOf="@id/tv_sale_hot" />
+
+        <TextView
+            android:id="@+id/tv_description_hot"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/lato_light"
+            android:text="Illum velit nam voluptatum enim aut ratione ratione officiis totam. Mollitia eum sint tempora ducimus"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/img_item_new_article_hot"
+            app:layout_constraintRight_toLeftOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_hot" />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            android:src="@mipmap/gruppo_di_maschere_1_clipped"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/alert"
+        android:layout_marginRight="14dp"
+        android:layout_gravity="end"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".activity.ForgotPassWord">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_color_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/componente_7_3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_large_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_black"
+            android:text="TRADIX"
+            android:textColor="#2b2828"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_color_strip"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/img_color_strip"
+            app:layout_constraintVertical_bias="0.52" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/coin"
+            app:layout_constraintBottom_toBottomOf="@id/img_color_strip"
+            app:layout_constraintLeft_toRightOf="@id/tv_large_title"
+            app:layout_constraintTop_toTopOf="@id/img_color_strip"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/tv_small_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_light"
+            android:text="The future of trading"
+            android:textColor="#171717"
+            android:textSize="22sp"
+            app:layout_constraintLeft_toLeftOf="@id/img_color_strip"
+            app:layout_constraintRight_toRightOf="@id/img_color_strip"
+            app:layout_constraintTop_toBottomOf="@id/tv_large_title" />
+
+        <ImageView
+            android:id="@+id/img_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/pixeltrue_newsletter"
+            app:layout_constraintTop_toBottomOf="@id/tv_small_title" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/raleway_black"
+            android:gravity="center"
+            android:text="We have sent you an\nemail to change your\npassword"
+            android:textColor="#656565"
+            android:textSize="22sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_big" />
+
+        <Button
+            android:id="@+id/btn_resend_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/brg_gradient_1"
+            android:fontFamily="@font/lato_black"
+            android:text="Resend email"
+            app:backgroundTint="@null"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_message" />
+
+        <TextView
+            android:id="@+id/tv_count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lato_light"
+            android:text="Wait 30 seconds before sending it"
+            android:textColor="#3e3e3e"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_resend_email"
+            android:paddingBottom="20dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

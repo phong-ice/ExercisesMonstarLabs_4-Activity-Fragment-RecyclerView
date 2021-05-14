@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".activity.LoginNow">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_pattern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/componente_6_7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="77dp"
+            android:src="@mipmap/logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_large_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/raleway_black"
+            android:gravity="center"
+            android:text="Yay! Your password has been\nchanged!"
+            android:textColor="#656565"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_logo" />
+
+        <TextView
+            android:id="@+id/tv_light_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lato_light"
+            android:gravity="center"
+            android:text="You can now log into your account\nwith the new password"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_large_title" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/componente_4_3"
+            app:layout_constraintBottom_toBottomOf="@id/img_big"
+            app:layout_constraintTop_toTopOf="@id/img_big"
+            app:layout_constraintVertical_bias="0.36" />
+
+        <ImageView
+            android:id="@+id/img_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pixeltrue_special_deals"
+            app:layout_constraintTop_toBottomOf="@id/tv_large_title" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="42dp"
+            android:src="@mipmap/flying_coins"
+            app:layout_constraintLeft_toLeftOf="@id/img_big"
+            app:layout_constraintTop_toTopOf="@id/img_big" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginRight="44dp"
+            android:rotation="180"
+            android:src="@mipmap/flying_coins"
+            app:layout_constraintRight_toRightOf="@id/img_big"
+            app:layout_constraintTop_toTopOf="@id/img_big" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/bgr_radius_20dp"
+            android:fontFamily="@font/lato_black"
+            android:text="LOGIN"
+            app:backgroundTint="#e432c1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_big" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:startColor="#f21cc8" android:endColor="#fd9feb"/>
+            <corners android:radius="15dp"/>
+            <padding android:bottom="2dp" android:top="2dp" android:left="8dp" android:right="8dp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/icon_chart_white" android:gravity="center"/>
+</layer-list>
